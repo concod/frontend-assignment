@@ -5,7 +5,7 @@ import { useQuery } from "react-query";
 import UsersDisplay from "./UsersDisplay";
 
 const fetchUsers = async () => {
-  const res = await fetch("http://localhost:3001/users/all");
+  const res = await fetch("https://frontend-test2020.herokuapp.com/users/all");
   return res.json();
 };
 
