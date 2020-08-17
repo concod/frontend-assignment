@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ModalWrapper from "../common/Modal";
 import { Table } from "antd";
-// Custom Imports
+// Component Imports
 import UserCalendar from "../calendar/UserCalendar";
 import { ActivitiesContext } from "../../context/ActivitiesContext";
 

@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 // Import middleware
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 const cors = require("cors");
 dotenv.config({ path: "./config.env" });
@@ -27,7 +28,7 @@ app.use(bodyParser.json());
 
 if (process.env.NODE_ENV && process.env.NODE_ENV !== "development") {
   app.get("*", (req, res) => {
-    res.sendFile("build/index.html", { root: __dirname });
+    res.sendFile(path.join(__dirname, "build", "index.html"));
   });
 }
 
