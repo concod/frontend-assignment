@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Avatar } from "antd";
-import { UserOutlined } from "@ant-design/icons";
 
 // Components Imports
 import UserModal from "./UserModal";
 import { ModalContext } from "../../context/ModalContext";
 import { ActivitiesContext } from "../../context/ActivitiesContext";
-// Utils
+// Utils Import
 import { timeFunctions } from "../../utility/timeFunctions";
 
 const UsersDisplay = ({ name, tz, activityPeriods }) => {
@@ -18,19 +17,19 @@ const UsersDisplay = ({ name, tz, activityPeriods }) => {
   );
 
   return (
-    <>
-      <ModalContext.Provider value={[showModal, setshowModal]}>
-        <div className="usersList" onClick={() => setshowModal(!showModal)}>
-          <Avatar icon={<UserOutlined />} />
-          <span style={{ marginLeft: "10px" }}>{name}</span>
-        </div>
-        <ActivitiesContext.Provider
-          value={{ todayActivityLogs, totalActivityLogs }}
-        >
-          <UserModal name={name} />
-        </ActivitiesContext.Provider>
-      </ModalContext.Provider>
-    </>
+    <ModalContext.Provider value={[showModal, setshowModal]}>
+      <div className="usersList" onClick={() => setshowModal(!showModal)}>
+        <Avatar style={{ color: "#f56a00", backgroundColor: "#fde3cf" }}>
+          {name.charAt(0)}
+        </Avatar>
+        <span style={{ marginLeft: "10px" }}>{name}</span>
+      </div>
+      <ActivitiesContext.Provider
+        value={{ todayActivityLogs, totalActivityLogs }}
+      >
+        <UserModal name={name} />
+      </ActivitiesContext.Provider>
+    </ModalContext.Provider>
   );
 };
 

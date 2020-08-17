@@ -5,13 +5,14 @@ import { Modal, Button } from "antd";
 import { ModalContext } from "../../context/ModalContext";
 
 const ModalWrapper = ({ name, children }) => {
+  const [Table, Calendar] = children;
   const [showModal, setShowModal] = useContext(ModalContext);
   const [showCalendar, setShowCalendar] = useState(false);
-  console.log(showCalendar);
-  // console.log(showModal);
+
   return (
     <Modal
-      title={name || "default"}
+      className="modalwrapper"
+      title={name}
       visible={showModal}
       onOk={() => {
         setShowCalendar(false);
@@ -21,9 +22,9 @@ const ModalWrapper = ({ name, children }) => {
         setShowCalendar(false);
         setShowModal(!showModal);
       }}
-      width={1400}
+      width={showCalendar ? "95%" : "50%"}
     >
-      {showCalendar ? children[1] : children[0]}
+      {showCalendar ? Calendar : Table}
       {!showCalendar ? (
         <Button
           onClick={() => setShowCalendar(true)}

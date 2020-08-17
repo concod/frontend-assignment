@@ -5,13 +5,14 @@ export const timeFunctions = (logs, tz) => {
 
   const timeFormat = "MMM D YYYY h:mmA";
 
+  // utility function to convert different Timezones to system Timezone
   function convToIndTime(time) {
     return moment
       .tz(time, timeFormat, tz)
       .tz("Asia/Kolkata")
       .format(timeFormat);
   }
-
+  // Convert user json to sytem time zone
   const indTimeLogs = logs.map((log) => {
     return {
       ...log,
@@ -20,10 +21,12 @@ export const timeFunctions = (logs, tz) => {
     };
   });
 
+  // function to format time using moment
   function formatTime(time, toFormat) {
     return moment(time, timeFormat).format(toFormat);
   }
 
+  // today's Activity logs
   const todayActivityLogs = indTimeLogs
     .filter(
       (log) =>
@@ -38,6 +41,7 @@ export const timeFunctions = (logs, tz) => {
       };
     });
 
+  // Total activity logs
   const totalActivityLogs = indTimeLogs.map((log) => {
     return {
       year: formatTime(log.start_time, "YYYY"),

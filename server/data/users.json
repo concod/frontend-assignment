@@ -29,6 +29,14 @@
         {
           "start_time": "Aug 16 2020 8:00PM",
           "end_time": "Aug 16 2020 10:00PM"
+        },
+        {
+          "start_time": "Aug 17 2020 8:00PM",
+          "end_time": "Aug 17 2020 10:00PM"
+        },
+        {
+          "start_time": "Aug 18 2020 8:00PM",
+          "end_time": "Aug 18 2020 10:00PM"
         }
       ]
     },
@@ -54,12 +62,130 @@
           "end_time": "Aug 15 2020 8:02PM"
         },
         {
+          "start_time": "Aug 17 2020 5:33AM",
+          "end_time": "Aug 17 2020 8:02AM"
+        },
+        {
+          "start_time": "Aug 18 2020 9:33AM",
+          "end_time": "Aug 18 2020 10:02PM"
+        }
+      ]
+    },
+
+    {
+      "id": "W07QCRKA4",
+      "real_name": "Saki Natamusho",
+      "tz": "Asia/Sakhalin",
+      "activity_periods": [
+        {
+          "start_time": "Feb 1 2020 1:33PM",
+          "end_time": "Feb 1 2020 1:54PM"
+        },
+        {
+          "start_time": "Mar 1 2020 11:11AM",
+          "end_time": "Mar 1 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020 5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        },
+        {
+          "start_time": "Aug 15 2020 5:33PM",
+          "end_time": "Aug 15 2020 8:02PM"
+        },
+        {
           "start_time": "Aug 16 2020 5:33AM",
           "end_time": "Aug 16 2020 8:02AM"
         },
         {
-          "start_time": "Aug 16 2020 9:33AM",
-          "end_time": "Aug 16 2020 10:02PM"
+          "start_time": "Aug 17 2020 9:33AM",
+          "end_time": "Aug 17 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 18 2020 9:33AM",
+          "end_time": "Aug 18 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 19 2020 9:33AM",
+          "end_time": "Aug 19 2020 10:02PM"
+        }
+      ]
+    },
+    {
+      "id": "W07QCRK98",
+      "real_name": "Ricardo Powell",
+      "tz": "Africa/Algiers",
+      "activity_periods": [
+        {
+          "start_time": "Feb 1 2020 1:33PM",
+          "end_time": "Feb 1 2020 1:54PM"
+        },
+        {
+          "start_time": "Mar 1 2020 11:11AM",
+          "end_time": "Mar 1 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020 5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        },
+        {
+          "start_time": "Aug 15 2020 5:33PM",
+          "end_time": "Aug 15 2020 8:02PM"
+        },
+        {
+          "start_time": "Aug 16 2020 5:33AM",
+          "end_time": "Aug 16 2020 8:02AM"
+        },
+        {
+          "start_time": "Aug 17 2020 9:33AM",
+          "end_time": "Aug 17 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 18 2020 9:33AM",
+          "end_time": "Aug 18 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 19 2020 9:33AM",
+          "end_time": "Aug 19 2020 10:02PM"
+        }
+      ]
+    },
+    {
+      "id": "W07QCRK99",
+      "real_name": "Mark Henry",
+      "tz": "Australia/Darwin",
+      "activity_periods": [
+        {
+          "start_time": "Feb 1 2020 1:33PM",
+          "end_time": "Feb 1 2020 1:54PM"
+        },
+        {
+          "start_time": "Mar 1 2020 11:11AM",
+          "end_time": "Mar 1 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020 5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        },
+        {
+          "start_time": "Aug 15 2020 5:33PM",
+          "end_time": "Aug 15 2020 8:02PM"
+        },
+        {
+          "start_time": "Aug 16 2020 5:33AM",
+          "end_time": "Aug 16 2020 8:02AM"
+        },
+        {
+          "start_time": "Aug 17 2020 9:33AM",
+          "end_time": "Aug 17 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 18 2020 9:33AM",
+          "end_time": "Aug 18 2020 10:02PM"
+        },
+        {
+          "start_time": "Aug 19 2020 9:33AM",
+          "end_time": "Aug 19 2020 10:02PM"
         }
       ]
     }

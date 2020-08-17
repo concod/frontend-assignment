@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 
+// Component Imports
 import UsersDisplay from "./UsersDisplay";
 
 const fetchUsers = async () => {
@@ -12,11 +13,11 @@ const UsersContainer = () => {
   const { data, status } = useQuery("users", fetchUsers);
 
   return (
-    <div>
+    <div className="userContainer">
       {status === "error" && <div>failed to load</div>}
       {status === "loading" && <div> Loading data...</div>}
       {status === "success" && (
-        <div>
+        <>
           {data.ok &&
             data.members.map((member) => (
               <UsersDisplay
@@ -26,7 +27,7 @@ const UsersContainer = () => {
                 activityPeriods={member.activity_periods}
               />
             ))}
-        </div>
+        </>
       )}
     </div>
   );

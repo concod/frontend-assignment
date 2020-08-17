@@ -27,6 +27,17 @@ body {
   text-align: center;
 }
 
+/* Navbar styles */
+
+.navbar {
+  width: 30%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding-top: 20px;
+}
 /*Calendar Styles*/
 .events {
   list-style: none;
@@ -52,17 +63,40 @@ body {
   font-size: 28px;
 }
 
+.userContainer {
+  width: 30%;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
 /*User List Styles*/
 .usersList {
   margin: auto;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
 }
-
+.usersList:nth-child(1) {
+  padding-top: 20px;
+}
+.usersList:nth-last-child(1) {
+  padding-bottom: 20px;
+}
 .usersList:hover {
   cursor: pointer;
   background-color: #fafafa;
+}
+
+@media screen and (max-width: 672px) {
+  .userContainer {
+    width: 90%;
+  }
+  .modalwrapper {
+    width: 90% !important;
+  }
 }

@@ -3,6 +3,8 @@ import { Calendar, Badge } from "antd";
 
 // Components import
 import { ActivitiesContext } from "../../context/ActivitiesContext";
+
+// Calendar data import
 import { getListData } from "./listData";
 
 const UserCalendar = () => {
