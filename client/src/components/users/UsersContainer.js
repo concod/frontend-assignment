@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 // Component Imports
 import UsersDisplay from "./UsersDisplay";
 
+// fetch users json file
 const fetchUsers = async () => {
   const res = await fetch("https://frontend-test2020.herokuapp.com/users/all");
   return res.json();
