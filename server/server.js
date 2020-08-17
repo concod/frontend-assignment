@@ -26,14 +26,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, "build")));
-
-if (process.env.NODE_ENV && process.env.NODE_ENV !== "development") {
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
-  });
-}
-
 // Implement route for '/api' endpoint
 app.use("/api", homeRouter);
 
@@ -49,6 +41,13 @@ app.use((err, req, res, next) => {
 
   res.status(500).send("Something broke!");
 });
+app.use(express.static(path.join(__dirname, "../", "client", "build")));
+
+if (process.env.NODE_ENV && process.env.NODE_ENV !== "development") {
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../", "client", "build", "index.html"));
+  });
+}
 
 // Start express app
 app.listen(PORT, function () {
